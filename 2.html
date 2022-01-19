@@ -1,0 +1,70 @@
+<div id="container">
+    <h1 id="hi">HI</h1>
+    <p id="hello">Hello human <strong>nice <u>HOT</u></strong></p>
+    <p id="old">How old r u?</p>
+</div>
+
+
+
+
+
+<style>
+    #container{
+        height: 100%;
+        text-align: center;
+        background-image: url("nasa-vhSz50AaFAs-unsplash.jpg");
+        background-size: cover;
+        background-repeat:  no-repeat;
+        background-position: center center; 
+        animation: fadein 2s;
+        /* Safari and Chrome */ 
+    }
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    #hi {
+        display: none;
+        font-size: 100px;
+        color:red;
+    }
+
+    #hello{
+        display: none;
+        font-size: 100px;
+        color:red;
+    } 
+
+    #old{
+        display: none;
+        font-size: 100px;
+        color:red;
+    }
+
+
+</style>
+
+<script>
+    window.onload = function(){
+        setTimeout(function(){
+            document.getElementById("hi").style.display = "block";
+        }, 3000);
+
+        setTimeout(function(){
+            document.getElementById("hello").style.display = "block";
+        }, 4000);
+
+        setTimeout(function(){
+            document.getElementById("old").style.display = "block";
+        }, 5000);
+    }
+</script>
